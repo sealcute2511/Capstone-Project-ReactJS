@@ -51,7 +51,7 @@ const DetailPage = () => {
                   <ul className="list-size p-0 m-0">
                     {product.size.map(size => (
                       <li
-                        style={size == sizeSelected ? {
+                        style={size === sizeSelected ? {
                           backgroundColor: '#007bff',
                           color: '#fff'
                         } : {}}

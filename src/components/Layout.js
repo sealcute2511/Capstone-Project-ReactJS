@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom"
 
 export const Layout = () => {
   return (
@@ -12,10 +12,10 @@ export const Layout = () => {
             <span className="material-icons-outlined">shopping_cart</span>
           </div>
           <div className="action action-login">
-            <a href="">Login</a>
+            <a href="/">Login</a>
           </div>
           <div className="action action-register">
-            <a href="">Register</a>
+            <a href="/">Register</a>
           </div>
         </div>
       </div>
@@ -23,19 +23,19 @@ export const Layout = () => {
       <div id="menu-top">
         <ul>
           <li>
-            <a href="">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="">Men</a>
+            <a href="/">Men</a>
           </li>
           <li>
-            <a href="">Woman</a>
+            <a href="/">Woman</a>
           </li>
           <li>
-            <a href="">Kid</a>
+            <a href="/">Kid</a>
           </li>
           <li>
-            <a href="">Sport</a>
+            <a href="/">Sport</a>
           </li>
         </ul>
       </div>
@@ -48,18 +48,18 @@ export const Layout = () => {
             <div className="menu menu-1">
               <h5 className="text-uppercase">Get Help</h5>
               <div className="menu-link">
-                <a href="">Contact Us</a>
-                <a href="">Shopping</a>
-                <a href="">NIKEiD</a>
-                <a href="">Nike+</a>
+                <a href="/">Contact Us</a>
+                <a href="/">Shopping</a>
+                <a href="/">NIKEiD</a>
+                <a href="/">Nike+</a>
               </div>
             </div>
             <div className="menu menu-2">
               <h5 className="text-uppercase">Orders</h5>
               <div className="menu-link">
-                <a href="">Payment Options</a>
-                <a href="">Shipping and delivery</a>
-                <a href="">Returns</a>
+                <a href="/">Payment Options</a>
+                <a href="/">Shipping and delivery</a>
+                <a href="/">Returns</a>
               </div>
             </div>
             <div className="menu menu-3">
@@ -67,7 +67,7 @@ export const Layout = () => {
               <div className="menu-link">
                 <p>Create one account to manage everything you do with Nike, form your shopping preferences to
                   you Nike+ activitiy</p>
-                <a href="" className="highlight">Learn more</a>
+                <a href="/" className="highlight">Learn more</a>
               </div>
             </div>
           </div>
@@ -81,21 +81,21 @@ export const Layout = () => {
               <h5 className="text-uppercase">Email Sign Up</h5>
               <div className="menu-link">
                 <p>Be the first to know about new products an special offers</p>
-                <a href="" className="highlight">Sign up now</a>
+                <a href="/" className="highlight">Sign up now</a>
               </div>
             </div>
             <div className="menu menu-2">
               <h5 className="text-uppercase">Gift cards</h5>
               <div className="menu-link">
                 <p>Give the gift that aways fits</p>
-                <a href="" className="highlight">View cards</a>
+                <a href="/" className="highlight">View cards</a>
               </div>
             </div>
             <div className="menu menu-3">
               <h5 className="text-uppercase">Stores near you</h5>
               <div className="menu-link">
                 <p>Locate a Nike retail store of authorized retailer</p>
-                <a href="" className="highlight">Search</a>
+                <a href="/" className="highlight">Search</a>
               </div>
             </div>
           </div>
