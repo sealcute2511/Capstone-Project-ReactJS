@@ -1,0 +1,226 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: dotted;
+}
+
+#header {
+  background-color: #000;
+  padding: 10px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header .header-logo {
+  width: 115px;
+}
+
+#header .header-logo img {
+  width: 100%;
+}
+
+#header .right-action {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+#header .right-action a {
+  color: #fff;
+  font-weight: 300;
+}
+
+#header .right-action .action {
+  padding: 5px;
+  display: flex;
+  justify-self: center;
+}
+
+#menu-top {
+  padding: 24px;
+}
+
+#menu-top ul {
+  list-style: none;
+  font-size: 0;
+}
+
+#menu-top ul li {
+  font-size: 18px;
+  display: inline-block;
+}
+
+#menu-top ul li a {
+  color: #000;
+  font-weight: 300;
+  padding: 7px 22px;
+  text-decoration: none;
+  transition: all 0.2s;
+  position: relative;
+}
+
+#menu-top ul li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0;
+  width: 0;
+  border: 1px solid #000;
+  transition: all 0.2s;
+  opacity: 0;
+}
+
+#menu-top ul li a:hover,
+#menu-top ul li a.active {
+  font-weight: 500;
+}
+
+#menu-top ul li a:hover:after,
+#menu-top ul li a.active:after {
+  width: 75%;
+  opacity: 1;
+}
+
+.menu-footer-1 {
+  background-color: #fafafa;
+}
+
+.menu-footer-2 {
+  background-color: #ececec;
+}
+
+.menu-footer .list-menu {
+  display: flex;
+  padding: 30px 0;
+}
+
+.menu-footer .list-menu .menu {
+  width: 33.33%;
+  padding: 0 15px;
+}
+
+.menu-footer .list-menu .menu h5 {
+  font-weight: 700;
+  margin-bottom: 0;
+  padding-bottom: 0.75rem;
+}
+
+.menu-footer .list-menu .menu .menu-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-footer .list-menu .menu .menu-link a {
+  color: #000;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.menu-footer .list-menu .menu .menu-link p {
+  margin-bottom: 0.25rem;
+}
+
+.menu-footer .list-menu .menu:not(:last-child) {
+  border-right: 2px solid #ebebeb;
+}
+
+.menu-footer .list-menu .menu .highlight {
+  color: #dd8884 !important;
+}
+
+.copyright {
+  background-color: #D9D9D9;
+  text-align: center;
+  padding:28px 0;
+}
+
+#relation-product {
+  margin-top: 0.75rem;
+}
+
+#relation-product .title {
+  text-align: center;
+  font-weight: 600;
+}
+
+#relation-product .area-relation-product {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#relation-product .area-relation-product .box-product {
+  background-color: #F8F8F8;
+  display: inline-block;
+  margin: 30px;
+  flex: 0 0 calc(33.333333% - 60px);
+}
+
+#relation-product .area-relation-product .box-product .img-preview {
+  width: 250px;
+  margin: auto;
+}
+
+#relation-product .area-relation-product .box-product .img-preview img {
+  width: 100%;
+}
+
+#relation-product .area-relation-product .box-product .product-content {
+  padding: 0 15px;
+}
+
+#relation-product .area-relation-product .box-product .product-content .short-description {
+  color: #CBC9C9;
+}
+
+#relation-product .area-relation-product .box-product .product-action {
+  display: flex;
+}
+
+#relation-product .area-relation-product .box-product .product-action .action-left,
+#relation-product .area-relation-product .box-product .product-action .action-right {
+  width: 50%;
+}
+
+#relation-product .area-relation-product .box-product .product-action .action-left button {
+  width: 100%;
+  height: 100%;
+  background-color: #E1B067;
+  border: none;
+  outline: none;
+}
+
+#relation-product .area-relation-product .box-product .product-action .action-right {
+  background-color: #DEDDDC;
+  font-weight: 700;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+#relation-product .area-relation-product .box-product .product-action .action-right p {
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+}
