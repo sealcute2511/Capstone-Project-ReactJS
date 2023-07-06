@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import './index.css';
 import Common from '../../utils/common';
+import { Stack } from '../../components/UI';
+import { ProductBox } from '../../components/ProductBox';
+import { ProductList } from '../../components/ProductList';
 
 const DetailPage = () => {
   const [product, setProduct] = useState(null);
@@ -86,30 +89,10 @@ const DetailPage = () => {
         </div>
       </div>
 
-      <div id="relation-product">
+      <div style={{ marginTop: '0.75rem' }}>
         <div className="container">
-          <h3 className="title">-Realate Product -</h3>
-          <div className="area-relation-product">
-            {product.relatedProducts.map(rProduct => (
-              <div class="box-product">
-                <div class="img-preview">
-                  <img src={rProduct.image} alt="Preview" />
-                </div>
-                <div class="product-content">
-                  <h6 class="product-name">{rProduct.name}</h6>
-                  <p class="short-description">{rProduct.shortDescription}</p>
-                </div>
-                <div class="product-action">
-                  <div class="action-left">
-                    <button>Buy now</button>
-                  </div>
-                  <div class="action-right">
-                    <p class="mb-0">${rProduct.price}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <h3 style={{ textAlign: 'center', fontWeight: 600 }}>- Realate Product -</h3>
+          <ProductList products={product.relatedProducts} />
         </div>
       </div>
     </div>
